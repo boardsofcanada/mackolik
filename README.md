@@ -36,7 +36,7 @@ KGV, KGY, IY1, IY0, IY2, 1-X, 1-2, X-2, TG01, TG23, TG46, TG7,
 **pip install -r requirements.txt**
   ```
 Python 3.6.5
-Requests 2.11.1
+Requests 2.20.0
 Beautifulsoup4 4.6.0
   ```
   
