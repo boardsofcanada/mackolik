@@ -39,8 +39,8 @@ class Mackolik:
 
     def calculate_date_range(self):
         """
-            Calculates dates between 'self.start_date' and 'self.end_date' and returns.
-            If 'self.end_date' is None, only returns 'self.start_date'
+            Calculates dates between 'self.start_date' and 'self.end_date' and append.
+            If 'self.end_date' is None, only append 'self.start_date'
 
             Example:
                 ['30/04/2017']
