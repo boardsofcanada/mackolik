@@ -4,7 +4,7 @@
 **mackolik.csv** dosyasında, 01/01/2013 ile 27/12/2018 tarihleri arasında oynanmış iddaa oranına sahip tüm futbol maçları vardır. Toplam 132970 maç.
 
 # Mackolik (EN)
-Gets the betting odds of football matches based on Turkey's Official Betting Game.
+Gets the betting odds of football matches based on Turkey's Official Betting Game (IDDAA).
 
 **mackolik.csv** have 132970 matches which played between 01/01/2013 and 27/12/2018
 
