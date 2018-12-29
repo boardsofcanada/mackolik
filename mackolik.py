@@ -47,7 +47,6 @@ class Mackolik:
                     OR
                 ['30/04/2017', '01/05/2017',....]
         """
-        dates = []
         if self.end_date == None or self.end_date == '':
             self.dates.append(self.start_date)
         else:
