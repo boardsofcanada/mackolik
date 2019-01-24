@@ -6,7 +6,7 @@
 # Mackolik (EN)
 Gets the betting odds of football matches based on Turkey's Official Betting Game (IDDAA).
 
-**mackolik.csv** have 132970 matches which played between 01/01/2013 and 24/01/2019
+**mackolik.csv** have 134002 matches which played between 01/01/2013 and 24/01/2019
 
 # Nasıl Çalışır? (TR)
   **Örnek gün 01/01/2018' e göre anlatım:**
