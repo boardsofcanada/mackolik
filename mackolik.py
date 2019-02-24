@@ -28,7 +28,6 @@ class Mackolik:
         self.file_name = file_name
         self.start_date = start_date
         self.end_date = end_date
-        self.matches = []
         self.dates = []
         self.match_data_url = 'http://goapi.mackolik.com/livedata?date={}' # data url of matches which played on a given date
         self.match_odds_url = 'http://arsiv.mackolik.com/Match/Default.aspx?id={}' # the url that contains betting odds of a match given as id
@@ -222,7 +221,7 @@ class Mackolik:
         return processed_odds
 
 
-    def write(self):
+    def write(self, matches):
         """
             Writes matches to csv file
 
@@ -235,21 +234,21 @@ class Mackolik:
         extension = '.csv'
         with open(path + '/' + self.file_name + extension, 'a') as file:
             writer = csv.writer(file, delimiter = ',')
-            for match in self.matches:
+            for match in matches:
                 writer.writerow(match)
 
 
     def main(self):
         self.calculate_date_range()
         for date in self.dates:
+            matches = []
             print("==> {}".format(date))
             details = self.get_matches(date)
-            self.matches.extend(details[0])
+            matches.extend(details[0])
             for idx, id in enumerate(details[1]):
                 odds_data = self.get_odds_data(id)
                 odds = self.parse_odds_data(odds_data)
-                self.matches[idx].extend(odds)
+                matches[idx].extend(odds)
                 time.sleep(0.5) # wait
             self.write()
-            self.matches.clear()
             print("Matches which played on {} has written".format(date))
