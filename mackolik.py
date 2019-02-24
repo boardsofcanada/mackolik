@@ -250,5 +250,5 @@ class Mackolik:
                 odds = self.parse_odds_data(odds_data)
                 matches[idx].extend(odds)
                 time.sleep(0.5) # wait
-            self.write()
+            self.write(matches)
             print("Matches which played on {} has written".format(date))
