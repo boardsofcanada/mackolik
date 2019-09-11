@@ -1,12 +1,14 @@
 # Mackolik (TR)
 İstenilen tarihe/tarihlere göre futbol maçlarının bilgilerini ve **iddaa** oranlarını mackolik.com'dan alıp csv dosyasına yazar.
 
-**mackolik.csv** dosyasında, 01/01/2013 ile 03/02/2019 tarihleri arasında oynanmış iddaa oranına sahip tüm futbol maçları vardır. Toplam 134753 maç.
+**mackolik.csv** dosyasında, 01/01/2013 ile 16/08/2019 tarihleri arasında oynanmış iddaa oranına sahip tüm futbol maçları vardır. Toplam 148120 maç.
+
+** Canlı Bahis sistemine geçildiği için Iddaa, maç kodlarını ve yapılarını değiştirmiştir. Bu yüzden, şuan program sadece Canlı Bahis sistemi öncesi tarihler için çalışmaktadır. İlerleyen zamanlarda program yeni sisteme entegre edilecektir.
 
 # Mackolik (EN)
 Gets the betting odds of football matches based on Turkey's Official Betting Game (IDDAA).
 
-**mackolik.csv** have 134753 matches which played between 01/01/2013 and 03/02/2019
+**mackolik.csv** have 148120 matches which played between 01/01/2013 and 16/08/2019
 
 # Nasıl Çalışır? (TR)
   **Örnek gün 01/01/2018' e göre anlatım:**
